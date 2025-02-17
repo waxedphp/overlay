@@ -18,7 +18,7 @@ npm install gasparesganga-jquery-loading-overlay
 
 ```
 
-<form class="form-horizontal waxed-overlay" >
+<form class="form-horizontal waxed-overlay" data-name="bodyoverlay" >
 
 </form>
 
@@ -28,11 +28,18 @@ npm install gasparesganga-jquery-loading-overlay
 
 ```
 
-$this->waxed->display([
-  'payload' =>
-    [
-    ],
-], 'template');
+      $this->waxed->pick('main')->inspire([
+        'bodyoverlay' => [
+            'waxedOverlayShow' => true,
+        ],
+      ]);
+
+      $this->waxed->pick('main')->inspire([
+        'bodyoverlay' => [
+            'waxedOverlayHide' => true,
+        ],
+      ],1000);
+
 
 ```
 

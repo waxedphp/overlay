@@ -30,6 +30,14 @@
         var rec = that.pluggable.getvar(that.dd.name, RECORD);
         if (typeof rec != 'object') { return; };
         this.options = this._config(rec, this.options);
+        console.log(rec);
+        if (typeof rec.waxedOverlayShow == 'boolean') {
+          //console.log('trigger');
+          $(document.body).trigger('waxed-waiting-show');
+        }
+        if (typeof rec.waxedOverlayHide == 'boolean') {
+          $(document.body).trigger('waxed-waiting-hide');
+        }
       },
 
       this.free = function() {
@@ -57,6 +65,7 @@
                 options.fontawesomeColor = dd.waxedOverlayFontawesomeColor;
             }
         }
+        
         return options;
       },
 

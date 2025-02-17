@@ -1,3 +1,3 @@
 #!/bin/bash
 
-npm i gasparesganga-jquery-loading-overlay --save
+npm install gasparesganga-jquery-loading-overlay

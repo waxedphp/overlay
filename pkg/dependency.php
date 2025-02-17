@@ -3,7 +3,7 @@
 return [
   'js' => [
     NODE . '/gasparesganga-jquery-loading-overlay/dist/loadingoverlay.js',
-    '/overlay/plugin.js',
+    $PATH . '/plugin.js',
   ],
   'css' => [
     
