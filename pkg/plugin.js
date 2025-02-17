@@ -30,9 +30,9 @@
         var rec = that.pluggable.getvar(that.dd.name, RECORD);
         if (typeof rec != 'object') { return; };
         this.options = this._config(rec, this.options);
-        console.log(rec);
+        //console.log(rec);
         if (typeof rec.waxedOverlayShow == 'boolean') {
-          //console.log('trigger');
+          //console.log('trigger', this.options);
           $(document.body).trigger('waxed-waiting-show');
         }
         if (typeof rec.waxedOverlayHide == 'boolean') {
@@ -89,7 +89,8 @@
         });
 
         if (!inited) {
-            var options = that._config($(document.body).data());
+            //var options = that._config($(document.body).data(), that.options);
+            var options = that.options;
             $(document.body).on('waxed-waiting-show',function(ev){
                 //console.log('BODY waxed-waiting-show');
                 ev.stopPropagation();
