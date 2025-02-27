@@ -77,13 +77,14 @@
         $(that.element).on('waxed-waiting-show',function(ev){
             ev.stopPropagation();
             //console.log('ELEMENT waxed-waiting-show');
-            $(that.element).LoadingOverlay('show' , that.options);
+            //$(that.element).LoadingOverlay('show' , that.options);
+            $.LoadingOverlay('show' , that.options);
             return false;
         });
         $(that.element).on('waxed-waiting-hide',function(ev){
             ev.stopPropagation();
             //console.log('ELEMENT waxed-waiting-hide');
-            $(that.element).LoadingOverlay('hide');
+            //$(that.element).LoadingOverlay('hide');
             $.LoadingOverlay('hide');
             return false;
         });

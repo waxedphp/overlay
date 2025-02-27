@@ -9,20 +9,8 @@ A flexible loading overlay jQuery plugin
 
 MIT license
 
-```
-npm install gasparesganga-jquery-loading-overlay
+---
 
-```
-
-### HTML:
-
-```
-
-<form class="form-horizontal waxed-overlay" data-name="bodyoverlay" >
-
-</form>
-
-```
 
 ### PHP:
 
@@ -42,5 +30,16 @@ npm install gasparesganga-jquery-loading-overlay
 
 
 ```
+---
+### HTML:
 
+```
+
+<form class="form-horizontal waxed-overlay" data-name="bodyoverlay" >
+
+</form>
+
+```
+---
+---
 
